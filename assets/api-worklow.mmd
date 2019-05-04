@@ -1,0 +1,34 @@
+sequenceDiagram
+
+opt scrapProduct
+Extension Chrome ->> API: api/product/scrap
+API -->> Place de marché: GET Page
+Place de marché -->> API: Page HTML
+API ->> Extension Chrome: Liste revendeurs
+end
+
+opt scrapSeller
+Extension Chrome ->> API: seller/scrap/{market_place}/{seller}
+API -->> Place de marché: GET Page
+Place de marché -->> API: Page HTML
+API ->> Extension Chrome: Informations revendeur
+end
+
+opt querySirene
+Extension Chrome ->> API: sirene/{siren}
+API -->> SIRENE: Recherche par SIREN / SIRET
+SIRENE -->> API: Liste établissements
+API ->> Extension Chrome: Informations établissements
+end
+
+opt queryBAN
+Extension Chrome ->> API: ban
+API -->> BAN: Recherche par adresse
+BAN -->> API: Résultat
+API ->> Extension Chrome: Coordonnées établissement
+end
+
+opt estimateDelivery
+Extension Chrome ->> API: delivery/estimate/{from}/{to}
+API ->> Extension Chrome: Distances de livraison
+end

@@ -1,0 +1,10 @@
+graph TD
+A(fa:fa-code Affichage de la page produit) -->|lien revendeur| B(fa:fa-code Affichage de la page revendeur)
+A --> |aucun revendeur| J[fa:fa-times-circle Fin]
+B --> |immatriculation commerciale| C(fa:fa-building Recherche sur SIRENE)
+C --> |trouvé| D[fa:fa-check-circle Liste établissements]
+C --> |non trouvé| E[fa:fa-times-circle Fin]
+D --> |adresse| F[fa:fa-map-marker-alt Recherche sur BAN]
+F --> |trouvé| G[fa:fa-check-circle Coordonnées]
+F --> |non trouvé| H[fa:fa-times-circle Fin]
+G --> |coordonnées| I[fa:fa-truck Calcul de la distance de livraison]
