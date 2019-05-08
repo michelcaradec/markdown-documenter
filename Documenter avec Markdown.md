@@ -41,7 +41,8 @@ note:
 - Première Release le 19 mars **2004**
 
 note:
-Markup : utilisation de balises pour enrichir le texte. Exemple : HTML, LaTeX
+Markup : utilisation de balises pour enrichir le texte.
+Exemple : HTML, LaTeX
 
 --
 
@@ -65,7 +66,7 @@ Markup : utilisation de balises pour enrichir le texte. Exemple : HTML, LaTeX
   - Comparaison / Fusion
 
 note:
-[Oublions Powerpoint avec Reveal.js – Framablog](https://framablog.org/2013/11/06/revealjs-alternative-libre-powerpoint/).
+Voir aussi [Oublions Powerpoint avec Reveal.js – Framablog](https://framablog.org/2013/11/06/revealjs-alternative-libre-powerpoint/).
 
 --
 
@@ -217,7 +218,7 @@ Lien [site](https://www.markdownguide.org/basic-syntax).
 
 note:
 Il est aussi possible de créer un lien vers le contenu du document, avec la syntaxe `[](#${HEADER-ENCODED})`.
-L'encodage de l'en-tête encodé peut-être trouvé à partir de la génération de la table des matières (extension [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)).
+La représentation encodée de l'en-tête peut-être trouvée à partir de la génération de la table des matières (extension [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)).
 
 --
 
@@ -480,7 +481,7 @@ Rendu :
 
 - Extension de fichier en **.md**
 - Nom de fichier de documentation **README.md**
-- Références : numéro de référence entre crochets
+- Note de bas de page : numéro de note entre crochets  
     Exemple :
 
     ```raw
@@ -490,7 +491,7 @@ Rendu :
     ```
 
 note:
-Référence : <https://www.markdownguide.org/basic-syntax#reference-style-links>.
+Note de bas de page : <https://www.markdownguide.org/basic-syntax#reference-style-links>.
 
 ---
 
@@ -503,7 +504,7 @@ Référence : <https://www.markdownguide.org/basic-syntax#reference-style-links>
   - [Visual Studio Code](https://code.visualstudio.com)
 
 note:
-StackEdit supporte la syntaxe mermaid.
+StackEdit supporte la syntaxe [Mermaid](#mermaid).
 
 --
 
@@ -569,7 +570,7 @@ Détail de la zone.
 </details>
 
 note:
-Même s'il est possible d'inclure des balises HTML dans le Markdown, cette pratique est à éviter, car elle nuit à la lisibilité du texte. Cette pratique s'avère néanmoins utile pour des présentations.
+Même s'il est possible d'inclure des balises HTML dans le Markdown, cette pratique est à éviter, car elle nuit à la lisibilité du texte. L'utilisation de balises HTML s'avère néanmoins utile pour des présentations.
 
 --
 
@@ -602,7 +603,7 @@ Pour un retour à la ligne, voir aussi [Syntaxe - Nouvelle ligne](#syntaxe---nou
 
 note:
 Cette présentation a été écrite en Markdown, et présentée avec Revealjs !
-/!\ Le document doit avoir des fins de lignes en LF (et pas CRLF).
+/!\ Sous Windows, le document doit avoir des fins de lignes en LF (et pas CRLF).
 
 --
 
@@ -612,9 +613,9 @@ Cette présentation a été écrite en Markdown, et présentée avec Revealjs !
 - [Mermaid Live Editor](https://mermaidjs.github.io/mermaid-live-editor/)
 
 note:
-/!\ N'est pas un standard de Markdown. Vérifier le support avant de l'utiliser.
+/!\ Mermaid n'est pas un standard de Markdown. Vérifier le support avant de l'utiliser.
 Exemples avec <assets/api-workflow.mmd> et <assets/detailed-workflow.mmd>.
-Extension Visual Studio Code [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) pour la preview.
+Extension Visual Studio Code [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) pour la pré-visualisation.
 
 --
 
@@ -653,4 +654,4 @@ Source : <https://github.com/michelcaradec/oxsirene-chrome/wiki/assets/detailed-
 Documentation sous stéroïdes : [Markdeep](http://casual-effects.com/markdeep/)
 
 note:
-Markdeep is a technology for writing plain text documents that will look good in any web browser, whether local or remote. It supports diagrams, calendars, equations, and other features as extensions of Markdown syntax.
+> Markdeep is a technology for writing plain text documents that will look good in any web browser, whether local or remote. It supports diagrams, calendars, equations, and other features as extensions of Markdown syntax.
